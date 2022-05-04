@@ -1,0 +1,11 @@
+.idea/
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.html
+*.rds
+*.Rproj
+.ipynb_checkpoints/*
+
+
