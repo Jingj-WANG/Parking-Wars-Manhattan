@@ -1,16 +1,9 @@
 [![Repo Checks](https://github.com/Sta663-Sp22/hw03_team12/workflows/Repo%20Checks/badge.svg)](https://github.com/Sta663-Sp22/hw03_team12/actions?query=workflow:%22Repo%20Checks%22)
 
 
-Homework 3 - Parking Wars: Manhattan
+Parking Wars: Manhattan
 ---
-due Friday, March 18th by 5:00 pm
-
-
-* Huang, Nancy - [ranxin.huang@duke.edu](mailto:ranxin.huang@duke.edu)
-* Pliego San Martin, Jose - [jose.pliego.san.martin@duke.edu](mailto:jose.pliego.san.martin@duke.edu)
-* Reynolds, Alison - [alison.reynolds@duke.edu](mailto:alison.reynolds@duke.edu)
-* Wang, Jingjing - [jingjing.wang386@duke.edu](mailto:jingjing.wang386@duke.edu)
-
+*Team Members:* Huang Nancy, Pliego San Martin Jose, Reynolds Alison, Wang Jingjing
 
 ![ticket](nyc_parking_ticket.jpg?raw=true)
 
@@ -85,31 +78,3 @@ Using your model from Task 2 and the prediction locations contained in `manh_pre
 See the following scikit-learn examples for inspiration: [k-means](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_digits.html#sphx-glr-auto-examples-cluster-plot-kmeans-digits-py), [decision trees](https://scikit-learn.org/stable/auto_examples/tree/plot_iris_dtc.html#sphx-glr-auto-examples-tree-plot-iris-dtc-py), [logistic regression](https://scikit-learn.org/stable/auto_examples/linear_model/plot_iris_logistic.html#sphx-glr-auto-examples-linear-model-plot-iris-logistic-py) + others
 
 No write up is needed for this task.
-
-<br/>
-
-## Submission and Marking
-
-This homework is due on Friday, March 18th by 5:00 pm. You are to
-complete the assignment as a team and to keep everything (code, write
-ups, etc.) in your team’s repository (commit early and often). Only the
-work committed to the repositories’ main branch by the deadline will be
-marked. As mentioned in syllabus, all team members are expected to
-contribute equal effort for this assignment - individual contributions
-will be assessed after the assignment is completed via peer evaluations
-and commits.
-
-The final product for this assignment should be a single notebook
-(hw3.ipynb) that contains all code and text for the tasks described
-above. This document should be clearly and cleanly formatted and present
-all of your results. Style and formatting does count for this
-assignment, so please take the time to make sure everything looks good
-and your text and code are properly formatted. This document must be
-reproducible and we must be able to rerun it with minimal intervention -
-documents that do not compile will be penalized.
-
-Given the expected runtimes for this assignment, we will not be automatically 
-running checks on the repository each time you push - instead you will need to 
-manually trigger the action by doing the following:
-
-Opening the Actions tab on your repo, select the Repo Checks workflow, and then click on the "Run workflow" button on the right of the blue banner in the middle of the page. This will create a pop-up with a green "Run workflow" button which will then launch the action (you can also trigger the action for other branches if you are using them). Once launched you will be able to see the running action by reloading the page.
