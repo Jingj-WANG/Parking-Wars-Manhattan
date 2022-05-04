@@ -1,0 +1,38 @@
+on: workflow_dispatch
+name: Repo Checks
+jobs:
+  check_allowed_files:
+    runs-on: self-hosted
+    container:
+      image: ghcr.io/sta663-sp22/sta663-base:main
+    timeout-minutes: 3
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Check Files
+      run: |
+        checklist::quit_on_failure({
+          checklist::check_allowed_files(
+            c("hw3.ipynb", "nyc_parking_ticket.jpg", "README.*", "data/*")
+          )
+        })
+      shell: Rscript {0}
+  check_renders:
+    needs: check_allowed_files
+    runs-on: self-hosted
+    container:
+      image: ghcr.io/sta663-sp22/sta663-base:main
+    timeout-minutes: 60
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: Check Renders
+      run: |
+        quarto render hw3.ipynb --execute --to html --self-contained
+    
+    - name: Archive html
+      uses: actions/upload-artifact@v2
+      with:
+        name: hw3.html
+        path: hw3.html
