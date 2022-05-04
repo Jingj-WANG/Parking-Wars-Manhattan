@@ -5,7 +5,6 @@ Parking Wars: Manhattan
 ---
 *Team Members:* Huang Nancy, Pliego San Martin Jose, Reynolds Alison, Wang Jingjing
 
-![ticket](nyc_parking_ticket.jpg?raw=true)
 
 ## Background
 
